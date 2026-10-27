@@ -1,0 +1,23 @@
+/* Keep the Add video action unmistakable in the library sidebar. */
+.library-heading { min-height: 34px; gap: 8px; }
+.library-add-video { flex-shrink: 0; padding: 6px 9px; border-color: #6556a5; background: #211d35; color: #ddd6ff; font-size: 11px; }
+.library-add-video:hover { border-color: #9b8cff; background: #2b2546; }
+.library-block > .library-heading { position: sticky; top: 0; z-index: 2; background: #0e1016; }
+
+/* Always-visible add action inside the chat composer. */
+.chat-composer .composer-input-row { display: flex; align-items: stretch; gap: 8px; }
+.chat-add-video-button { flex: 0 0 52px; min-width: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; border: 1px solid #6556a5; border-radius: 12px; background: #211d35; color: #ddd6ff; cursor: pointer; font: inherit; font-size: 10px; }
+.chat-add-video-button:hover { border-color: #9b8cff; background: #2b2546; }
+.chat-add-video-button:focus-visible { outline: 2px solid #9b8cff; outline-offset: 2px; }
+.chat-composer .composer-input-row textarea { flex: 1; min-width: 0; }
+
+/* Frame-shot capture belongs to the chat composer and is not a library asset. */
+.chat-frame-shot-button { flex: 0 0 58px; min-width: 58px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2px; border:1px solid #6556a5; border-radius:12px; background:#211d35; color:#ddd6ff; cursor:pointer; font:inherit; font-size:10px; }
+.chat-frame-shot-button:hover:not(:disabled) { border-color:#9b8cff; background:#2b2546; }
+.chat-frame-shot-button:disabled { opacity:.55; cursor:wait; }
+.frame-shot-pending { display:flex; align-items:center; gap:10px; padding:8px; margin:0 0 8px; border:1px solid #51477c; border-radius:12px; background:#171522; }
+.frame-shot-pending img { width:76px; height:48px; object-fit:cover; border-radius:7px; }
+.frame-shot-pending div { flex:1; min-width:0; display:flex; flex-direction:column; gap:3px; }
+.frame-shot-pending strong { font-size:12px; } .frame-shot-pending small { font-size:11px; opacity:.75; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.frame-shot-pending button { border:0; background:transparent; color:inherit; cursor:pointer; }
+.frame-shot-message-label { display:flex; align-items:center; gap:5px; font-size:11px; color:#bcb0ff; margin-bottom:5px; }
